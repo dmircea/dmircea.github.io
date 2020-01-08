@@ -2,28 +2,10 @@
 <html>
 
 	<head>
-		<meta charset="utf-8">
 		<title>Mircea Dumitrache</title>
-		<style>
-
-			body {
-				background-color: #990000;
-				margin: 2% 7%;
-				font-family: sans-serif;
-			}
-
-			.everything, footer {
-				background-color: #2299bb;
-				padding: 5px;
-			}
-
-			footer {
-				position: fixed;
-				bottom: 0;
-				width: 86%;
-			}
-
-		</style>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
 
 		<script src="assets/JSScripts/downloadFunct.js"></script>
 
@@ -32,12 +14,14 @@
 		Head - Body space ----------------------------------------- Head - Body space
 	-->
 	<body>
+		<header id="header">
+			<a href="index.html" class="logo"><h1>Webpage of Mircea Dumitrache</h1></a>
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
+		</header>
+
 		<section class="everything">
-
-			<header>
-				<p> This will be the header content. </p>
-			</header>
-
 			<h1>Webpage of Mircea Dumitrache</h1>
 			<br>
 			<hr>
@@ -47,13 +31,21 @@
 			<p>This is a small application used for finding prime numbers using different methos
 			of computation. Each separate method is timed. The data found is stored in a text file.</p>
 
-			<a download="testC++.txt" href="../files/projects/C++/testC++.zip">Download project here!</a>
+			<a download="testC++.txt" href="assets/files/projects/C++/testC++.zip">Download project here!</a>
 
-			<footer>
-				<hr>
-				<p><small> Copyright 2019, Mircea Dumitrache</small></p>
-			</footer>
 		</section>
+		<footer id="footer">
+			<div class="copyright">
+				&copy; 2019, Mircea Dumitrache. Design: <strong>Binary</strong> by <a href="https://templated.co">TEMPLATED</a>.
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/JSScripts/jquery.min.js"></script>
+		<script src="assets/JSScripts/jquery.scrolly.min.js"></script>
+		<script src="assets/JSScripts/skel.min.js"></script>
+		<script src="assets/JSScripts/util.js"></script>
+		<script src="assets/JSScripts/main.js"></script>
 	</body>
 
 
