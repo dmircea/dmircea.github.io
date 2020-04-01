@@ -6,27 +6,32 @@
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<!-- The next two script tags are not my own work.
+			The origin can be found at:
+
+			Thank you for the help.
+		-->
+		<!-- <script
+			src="https://code.jquery.com/jquery-3.3.1.js"
+			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			crossorigin="anonymous">
+		</script>
+		<script>
+			$(function(){
+			    $("#head").load("header.html");
+			    $("#foot").load("footer.html");
+			});
+		</script> -->
 	</head>
 	<!--
 		Head - Body space ################################ Head - Body space
 	-->
 	<body>
-		<header id="header">
-			<a href="index.html" class="logo"><h1>Webpage of Mircea Dumitrache</h1></a>
-			<nav>
-				<a href="#menu">Menu</a>
-			</nav>
-		</header>
 
-		<nav id="menu">
-			<ul class="links">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="cpp.html">C++ Projects</a></li>
-				<li><a href="python.html">Python Projects</a></li>
-				<li><a href="projects.html">Others</a></li>
-				<li><a href="about.html">About me</a></li>
-			</ul>
-		</nav>
+		<!-- The header and menu go here for all files. -->
+		<!-- <div id="head"></div> -->
+		<!-- #include file="header.html" -->
 
 		<!-- Banner -->
 		<section id="banner">
@@ -35,6 +40,7 @@
 				<ul class="actions">
 					<li><a href="about.html" class="button special fit">About Me</a></li>
 					<li><a href="python.html" class="button fit">Python projects</a></li>
+					<li><a href="python.html" class="button fit">C++ projects</a></li>
 				</ul>
 			</div>
 		</section>
@@ -59,15 +65,13 @@
 				<ul class="actions">
 					<li><a href="about.html" class="button special fit">About Me</a></li>
 					<li><a href="python.html" class="button fit">Python projects</a></li>
+					<li><a href="python.html" class="button fit">C++ projects</a></li>
 				</ul>
 			</div>
 		</section>
 
-		<footer id="footer">
-			<div class="copyright">
-				&copy; 2019, Mircea Dumitrache. Design: <strong>Binary</strong> by <a href="https://templated.co">TEMPLATED</a>.
-			</div>
-		</footer>
+		<!-- This is where the footer will be-->
+		<div id="foot"></div>
 
 		<!-- Scripts -->
 		<script src="assets/JSScripts/jquery.min.js"></script>
