@@ -9,10 +9,11 @@
 
 		<!-- The next two script tags are not my own work.
 			The origin can be found at:
+			https://stackoverflow.com/questions/18712338/make-header-and-footer-files-to-be-included-in-multiple-html-pages
 
 			Thank you for the help.
 		-->
-		<script
+		<!-- <script
 			src="https://code.jquery.com/jquery-3.3.1.js"
 			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 			crossorigin="anonymous">
@@ -23,14 +24,31 @@
 			    $("#foot").load("footer.html");
 			});
 		</script>
-	</head>
+	</head> -->
 	<!--
 		Head - Body space ################################ Head - Body space
 	-->
 	<body>
 
 		<!-- The header and menu go here for all files. -->
-		<div id="head"></div>
+		<!-- <div id="head"></div> -->
+		<header id="header">
+		    <a href="index.html" class="logo"><h1>Webpage of Mircea Dumitrache</h1></a>
+		    <nav>
+		        <a href="#menu">Menu</a>
+		    </nav>
+		</header>
+
+
+		<nav id="menu">
+		    <ul class="links">
+		        <li><a href="index.html">Home</a></li>
+		        <li><a href="cpp.html">C++ Projects</a></li>
+		        <li><a href="python.html">Python Projects</a></li>
+		        <li><a href="projects.html">Others</a></li>
+		        <li><a href="about.html">About me</a></li>
+		    </ul>
+		</nav>
 
 		<!-- Banner -->
 		<section id="banner">
@@ -39,7 +57,7 @@
 				<ul class="actions">
 					<li><a href="about.html" class="button special fit">About Me</a></li>
 					<li><a href="python.html" class="button fit">Python projects</a></li>
-					<li><a href="python.html" class="button fit">C++ projects</a></li>
+					<li><a href="cpp.html" class="button fit">C++ projects</a></li>
 				</ul>
 			</div>
 		</section>
@@ -49,6 +67,7 @@
 			<div class="inner">
 				<!-- Disclaimer of WIP -->
 				<p><b>Please note that this website is a work in progress.</b></p>
+				<p>This website has been tested on Safari and Internet Edge successfully.</p>
 
 				<div>
 					<h2>Recent projects!</h2>
@@ -64,13 +83,18 @@
 				<ul class="actions">
 					<li><a href="about.html" class="button special fit">About Me</a></li>
 					<li><a href="python.html" class="button fit">Python projects</a></li>
-					<li><a href="python.html" class="button fit">C++ projects</a></li>
+					<li><a href="cpp.html" class="button fit">C++ projects</a></li>
 				</ul>
 			</div>
 		</section>
 
 		<!-- This is where the footer will be-->
-		<div id="foot"></div>
+		<!-- <div id="foot"></div> -->
+		<footer id="footer">
+		    <div class="copyright">
+		        &copy; 2019, Mircea Dumitrache. Design: <strong>Binary</strong> by <a href="https://templated.co">TEMPLATED</a>.
+		    </div>
+		</footer>
 
 		<!-- Scripts -->
 		<script src="assets/JSScripts/jquery.min.js"></script>
