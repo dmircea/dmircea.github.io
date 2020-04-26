@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<title>Mircea Dumitrache</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<script src="assets/JSScripts/downloadFunct.js"></script>
+
+	</head>
+	<!--
+		Head - Body space ----------------------------------------- Head - Body space
+	-->
+	<body>
+		<header id="header">
+			<a href="index.html" class="logo"><h1>Webpage of Mircea Dumitrache</h1></a>
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
+		</header>
+
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="cpp.html">C++ Projects</a></li>
+				<li><a href="python.html">Python Projects</a></li>
+				<li><a href="rust.html">Rust Projects</a></li>
+				<li><a href="Vim_Learning.html">Learning Vim</a></li>
+				<li><a href="about.html">About me</a></li>
+			</ul>
+		</nav>
+
+		<section id="main">
+			<div class="inner">
+				<h2>Learning Vim</h2>
+
+                <br/>
+
+                <h3>About Vim</h3>
+                <p>Vim is a text-editor, derived from the orignal Vi. It is available
+                as a GUI application, but was originally developed for the terminal.
+                It is an open-source application that is automatically installed
+                in most Linux operatins systems and in every copy of macOS. Additionally,
+                it is available for download on most other OS including Windows.</p>
+
+                <p>Utilizing Vim can maximize productivity, since all shortcuts and
+                key-bindings are designed in order to keep the typers hands on the
+                keyboard, and not have them wander over a mouse or on the arrow keys.
+                However it is also very difficult to learn how to use Vim, since
+                memorizing all the key shortcuts must be done over the course of time.
+                </p>
+
+                <h3>My interest in Vim</h3>
+                <p>I spent a good amount of time on the terminal with my projects,
+                and decided that learning Vim can be helpful for tweaking the files,
+                searching for important bits of information, especially because it
+                is used by default in many programs (GitHub commit command will automatically
+                open an instance Vim for the message, as an example.)</p>
+                <p>Also it seems to be pretty fun.</p>
+
+                <h3>Vim Commands</h3>
+                <p>Lasty, I made this page as my personal reminder of all the shortcuts
+                that can be used in Vim and how they are used.</p>
+
+                <section>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Command</th>
+                                    <th>Use</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>:q</td>
+                                    <td>Quits the current file as long as no changes have been made.</td>
+                                </tr>
+                                <tr>
+                                    <td>:i</td>
+                                    <td>Enter insert mode used for typing.</td>
+                                </tr>
+                                <tr>
+                                    <td>:w</td>
+                                    <td>Writes all changes to the file. Same as saving the file.</td>
+                                </tr>
+                                <tr>
+                                    <td>:qa</td>
+                                    <td>Quit all files if multiple are open.</td>
+                                </tr>
+                                <tr>
+                                    <td>:q! or :qa!</td>
+                                    <td>Force quits. If changes are made but not written, this will discard the changes.</td>
+                                </tr>
+                                <tr>
+                                    <td>w</td>
+                                    <td>Move cursor to the beginning of the next word.</td>
+                                </tr>
+                                <tr>
+                                    <td>b</td>
+                                    <td>Move cursor to the beginning of the previous word.</td>
+                                </tr>
+                                <tr>
+                                    <td>e</td>
+                                    <td>Move cursor to the end of current or next word.</td>
+                                </tr>
+                                <tr>
+                                    <td>h j k l</td>
+                                    <td>Moves cursor left, down, up, and right respectively.</td>
+                                </tr>
+                                <tr>
+                                    <td>)</td>
+                                    <td>Moves to the begining of the next sentence, assuming English format.</td>
+                                </tr>
+                                <tr>
+                                    <td>(</td>
+                                    <td>Moves to the beginning of the previous sentence, assuming English format.</td>
+                                </tr>
+                                <tr>
+                                    <td>ctrl+[ or Esc</td>
+                                    <td>Exits other modes back into normal mode.</td>
+                                </tr>
+                                <tr>
+                                    <td>dw</td>
+                                    <td>Delete the word from the cursor forward.</td>
+                                </tr>
+                                <tr>
+                                    <td>db</td>
+                                    <td>Delete the previous word or the current word from the cursor back.</td>
+                                </tr>
+                                <tr>
+                                    <td>d)</td>
+                                    <td>Delete the rest of the sentence from the cursor.</td>
+                                </tr>
+                                <tr>
+                                    <td>d(</td>
+                                    <td>Delete the previous sentence or from the begining of the sentence until the cursor.</td>
+                                </tr>
+                                <tr>
+                                    <td>dd</td>
+                                    <td>Delete entire line.</td>
+                                </tr>
+                                <tr>
+                                    <td>u</td>
+                                    <td>Equivalent of undo command.</td>
+                                </tr>
+                                <tr>
+                                    <td>yw</td>
+                                    <td>Copy the next word.</td>
+                                </tr>
+                                <tr>
+                                    <td>y)</td>
+                                    <td>Copy the next sentence.</td>
+                                </tr>
+                                <tr>
+                                    <td>yy</td>
+                                    <td>Copy the entire line.</td>
+                                </tr>
+                                <tr>
+                                    <td>p</td>
+                                    <td>Paste from the Vim clipboard.</td>
+                                </tr>
+                                <tr>
+                                    <td>shift+p</td>
+                                    <td>Paste before the word.</td>
+                                </tr>
+                                <tr>
+                                    <td>:/ followed by regex</td>
+                                    <td>Allows searching using regular expressions.</td>
+                                </tr>
+                                <tr>
+                                    <td>COMING SOON</td>
+                                    <td>More commands comming as soon as I learn how to use them extensively.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+
+
+			</div>
+		</section>
+		<footer id="footer">
+			<p><b>This page was last updated on 04/24/2020</b></p>
+			<div class="copyright">
+				&copy; 2019, Mircea Dumitrache. Design: <strong>Binary</strong> by <a href="https://templated.co">TEMPLATED</a>.
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/JSScripts/jquery.min.js"></script>
+		<script src="assets/JSScripts/jquery.scrolly.min.js"></script>
+		<script src="assets/JSScripts/skel.min.js"></script>
+		<script src="assets/JSScripts/util.js"></script>
+		<script src="assets/JSScripts/main.js"></script>
+	</body>
+
+
+</html>
