@@ -60,6 +60,45 @@
                 open an instance Vim for the message, as an example.)</p>
                 <p>Also it seems to be pretty fun.</p>
 
+				<h3>Vim Modes</h3>
+				<p>Vim has a set of modes that can be use to simplify text editing
+				while upholding the same ammount of productivity from the users.</p>
+
+				<section>
+					<div class="table-wrapper">
+						<table>
+							<thead>
+								<tr>
+									<th>Mode</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Normal</td>
+									<td>This is what Vim starts in. This mode is used to move quickly through the text.</td>
+								</tr>
+								<tr>
+									<td>Insert</td>
+									<td>This mode is used for actual typing. Once the place where typing must be done the insert
+										mode is used to change the functionalities of the keys. Escape or Control + [ is used to
+										leave insert mode, back into normal mode.</td>
+								</tr>
+								<tr>
+									<td>Visual</td>
+									<td>This mode is used for simplifying more complex selections.</td>
+								</tr>
+								<tr>
+									<td>Visual Block</td>
+									<td>This mode is derived from the visual mode, but instead selects text by block.
+										It's selection forms a rectangle around the selected area defined by
+										the width and length from where the user entered into visual block mode.</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
+
                 <h3>Vim Commands</h3>
                 <p>Lasty, I made this page as my personal reminder of all the shortcuts
                 that can be used in Vim and how they are used.</p>
@@ -79,8 +118,12 @@
                                     <td>Quits the current file as long as no changes have been made.</td>
                                 </tr>
                                 <tr>
-                                    <td>:i</td>
+                                    <td>i</td>
                                     <td>Enter insert mode used for typing.</td>
+                                </tr>
+								<tr>
+                                    <td>o</td>
+                                    <td>Move the cursor to a newly made line below the current line and enter insert moder.</td>
                                 </tr>
                                 <tr>
                                     <td>:w</td>
@@ -170,10 +213,66 @@
                                     <td>:/ followed by regex</td>
                                     <td>Allows searching using regular expressions.</td>
                                 </tr>
-                                <tr>
-                                    <td>COMING SOON</td>
-                                    <td>More commands comming as soon as I learn how to use them extensively.</td>
+								<tr>
+                                    <td>n</td>
+                                    <td>Move the cursor to the next instance of the search key.</td>
                                 </tr>
+								<tr>
+                                    <td>*</td>
+                                    <td>Sets the search direction as forward.</td>
+                                </tr>
+								<tr>
+                                    <td>#</td>
+                                    <td>Sets the search direction as backward.</td>
+                                </tr>
+                                <tr>
+                                    <td>gg</td>
+                                    <td>Move the cursor to the beginning of the file.</td>
+                                </tr>
+								<tr>
+                                    <td>shift + g</td>
+                                    <td>Move the cursor to the end of the file.</td>
+                                </tr>
+								<tr>
+                                    <td>0</td>
+                                    <td>Move the cursor to the beginning of the line.</td>
+                                </tr>
+								<tr>
+                                    <td>$</td>
+                                    <td>Move the cursor to the end of the line.</td>
+                                </tr>
+								<tr>
+                                    <td>ctrl + f</td>
+                                    <td>Scrolls the page down.</td>
+                                </tr>
+								<tr>
+                                    <td>ctrl + b</td>
+                                    <td>Scrolls the page up.</td>
+                                </tr>
+								<tr>
+                                    <td>:set number</td>
+                                    <td>Shows the line number of each line until the session ends.</td>
+                                </tr>
+								<tr>
+                                    <td>cw or c) or cc or c/(regex)</td>
+                                    <td>Delete the current instance of the word/sentence/line/regex and instantly enter insert mode.</td>
+                                </tr>
+								<tr>
+                                    <td>v</td>
+                                    <td>Enter visual mode.</td>
+                                </tr>
+								<tr>
+                                    <td>shift + v</td>
+                                    <td>Enter visual mode and select all of the current line.</td>
+                                </tr>
+								<tr>
+                                    <td>ctrl + v</td>
+                                    <td>Enter visual block mode. This selects rectangular areas of text.</td>
+                                </tr>
+								<tr>
+									<td>Coming Soon</td>
+									<td>More commands as soon as I learn to use them extensively.</td>
+								</tr>
                             </tbody>
                         </table>
                     </div>
@@ -184,7 +283,7 @@
 			</div>
 		</section>
 		<footer id="footer">
-			<p><b>This page was last updated on 04/24/2020</b></p>
+			<p><b>This page was last updated on 04/28/2020</b></p>
 			<div class="copyright">
 				&copy; 2019, Mircea Dumitrache. Design: <strong>Binary</strong> by <a href="https://templated.co">TEMPLATED</a>.
 			</div>
