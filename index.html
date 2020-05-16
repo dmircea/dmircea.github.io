@@ -6,6 +6,16 @@
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			#banner{
+				background-image: url("assets/files/images/Decimal_Picture.png");
+				background-blend-mode: color-burn;
+			}
+			h1.banner_txt{
+				background-color: inherit;
+				color: #FF3333 !important;
+			}
+		</style>
 
 		<!-- The next two script tags are not my own work.
 			The origin can be found at:
@@ -33,7 +43,7 @@
 		<!-- The header and menu go here for all files. -->
 		<!-- <div id="head"></div> -->
 		<header id="header">
-		    <a href="index.html" class="logo"><h1>Webpage of Mircea Dumitrache</h1></a>
+		    <a href="index.html" class="logo"><h1>Mircea Dumitrache</h1></a>
 		    <nav>
 		        <a href="#menu">Menu</a>
 		    </nav>
@@ -54,7 +64,7 @@
 		<!-- Banner -->
 		<section id="banner">
 			<div class="inner">
-				<h1>Welcome to my website. Feel free to look around!</a></h1>
+				<h1 class="banner_txt">Welcome to my website. Feel free to look around!</h1>
 				<ul class="actions">
 					<li><a href="about.html" class="button special fit">About Me</a></li>
 					<li><a href="python.html" class="button fit">Python projects</a></li>
@@ -68,14 +78,29 @@
 		<!--	Self-introduction section.	-->
 		<section id="main">
 			<div class="inner">
+				<!-- Starting point -->
+				<h2>Welcome!</h2>
+				<p>
+				If you would like to see my projects, please see the recent
+				projects and website updates located below. Alternatively,
+				feel free to look at the individual project pages found in the menu
+				at the top right corner.
+				</br>
+				If you would like to know more about me or my skills please see
+				the "About me" page.
+				</p>
+
+
+
 				<!-- Disclaimer of WIP -->
 				<p><b>Please note that this website is a work in progress.</b></p>
 				<p>This website has been tested on Safari, Internet Edge, Google Chrome and Avast Browser successfully.
-					<br/>It does not work as intended on Mozilla Firefox.</p>
+					<br/>It does not work as intended on Mozilla Firefox since the original template does not work either.</p>
 
 				<div>
 					<h3>Recent Website Updates</h3>
 					<list>
+						<li>Updated main page and about page slightly.</li>
 						<li>Updated <a href="Vector_mimic.html">Vector_Mimic</a> to use google test.</li>
 						<li>Added <a href="Ray_Tracer.html">Ray tracer</a> project in the C++ projects page</li>
 						<li>Added <a href="Vim_Learning.html">Learning Vim</a> page</li>
@@ -86,7 +111,8 @@
 
 				<div>
 					<h3>Recent projects!</h3>
-
+					<a href="Vector_mimic.html">Vector_Mimic</a>
+					</br>
 					<a href="Ray_Tracer.html">Ray Tracer on Xubuntu</a>
 					<br/>
 					<a href="Vim_Learning.html">Learning Vim</a>
