@@ -4,18 +4,13 @@
 	<head>
 		<title>Mircea Dumitrache</title>
 		<meta charset="utf-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<!-- TODO: Need to look into how to use the two lines below. -->
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<style>
-			#banner{
-				background-image: url("assets/files/images/Decimal_Picture.png");
-				background-blend-mode: color-burn;
-			}
-			h1.banner_txt{
-				background-color: inherit;
-				color: #FF3333 !important;
-			}
-		</style>
 
 		<!-- The next two script tags are not my own work.
 			The origin can be found at:
@@ -38,10 +33,9 @@
 	<!--
 		Head - Body space ################################ Head - Body space
 	-->
-	<body>
+	<body class="is-preload">
 
 		<!-- The header and menu go here for all files. -->
-		<!-- <div id="head"></div> -->
 		<header id="header">
 		    <a href="index.html" class="logo"><h1>Mircea Dumitrache</h1></a>
 		    <nav>
@@ -49,7 +43,7 @@
 		    </nav>
 		</header>
 
-
+		<!-- Navigation menu for all options -->
 		<nav id="menu">
 			<ul class="links">
 				<li><a href="index.html">Home</a></li>
@@ -57,100 +51,128 @@
 				<li><a href="python.html">Python Projects</a></li>
 				<li><a href="rust.html">Rust Projects</a></li>
 				<li><a href="Vim_Learning.html">Learning Vim</a></li>
-				<li><a href="about.html">About me</a></li>
+				<li><a href="about.html">About me and this Website</a></li>
 			</ul>
 		</nav>
 
 		<!-- Banner -->
 		<section id="banner">
 			<div class="inner">
-				<h1 class="banner_txt">Welcome to my website. Feel free to look around!</h1>
-				<ul class="actions">
-					<li><a href="about.html" class="button special fit">About Me</a></li>
-					<li><a href="python.html" class="button fit">Python projects</a></li>
-					<li><a href="cpp.html" class="button special fit">C++ projects</a></li>
-					<li><a href="rust.html" class="button fit">Rust projects</a></li>
-					<li><a href="Vim_Learning.html" class="button special fit">Vim</a></li>
-				</ul>
+				<h1 class="banner_txt">“Before software should be reusable, it should be usable.”</br>
+										— Ralph Johnson</h1>
+
 			</div>
 		</section>
 
-		<!--	Self-introduction section.	-->
-		<section id="main">
+		<!-- The main introduction and featured projects go here.
+				I will probably put about three projects. 3 C++ and 3 Python.
+			-->
+		<section class="wrapper">
 			<div class="inner">
-				<!-- Starting point -->
-				<h2>Welcome!</h2>
-				<p>
-				If you would like to see my projects, please see the recent
-				projects and website updates located below. Alternatively,
-				feel free to look at the individual project pages found in the menu
-				at the top right corner.
-				</br>
-				If you would like to know more about me or my skills please see
-				the "About me" page.
-				</p>
-
-
-
-				<!-- Disclaimer of WIP -->
-				<p><b>Please note that this website is a work in progress.</b></p>
-				<p>This website has been tested on Safari, Internet Edge, Google Chrome and Avast Browser successfully.
-					<br/>It does not work as intended on Mozilla Firefox since the original template does not work either.</p>
-
-				<div>
-					<h3>Recent Website Updates</h3>
-					<list>
-						<li>Updated main page and about page slightly.</li>
-						<li>Updated <a href="Vector_mimic.html">Vector_Mimic</a> to use google test.</li>
-						<li>Added <a href="Ray_Tracer.html">Ray tracer</a> project in the C++ projects page</li>
-						<li>Added <a href="Vim_Learning.html">Learning Vim</a> page</li>
-						<li>Added Rust projects page</li>
-					</list>
-					<br/>
-				</div>
-
-				<div>
-					<h3>Recent projects!</h3>
-					<a href="Vector_mimic.html">Vector_Mimic</a>
-					</br>
-					<a href="Ray_Tracer.html">Ray Tracer on Xubuntu</a>
-					<br/>
-					<a href="Vim_Learning.html">Learning Vim</a>
-
-				</div>
-
-				<br/><br/>
-
-				<div>
-					<p>Please choose where you would like to go: </p>
-
-					<!--	Page selection section		-->
-					<ul class="actions">
-						<li><a href="about.html" class="button special fit">About Me</a></li>
-						<li><a href="python.html" class="button fit">Python projects</a></li>
-						<li><a href="cpp.html" class="button special fit">C++ projects</a></li>
-						<li><a href="rust.html" class="button fit">Rust projects</a></li>
-						<li><a href="Vim_Learning.html" class="button special fit">Vim</a></li>
-					</ul>
+				<header class="special">
+					<h2>Welcome to my portfolio!</h2>
+					<p>There are six featured projects below. For a more thorough list of projects please see the menu in the upper-rigth corner. Thank you!</p>
+				</header>
+				<div class="highlights">
+					<section>
+						<div id="cppCard" class="content">
+							<header>
+								<h3>Basic Ray Tracer</h3>
+							</header>
+							<p>A thorough but simple implementation of a ray tracer. This program
+							will use json data to construct a 3-D scene that can be drawn. This scene
+							will include a camera, some objects and lights and will use matrix mathematics
+							to create an image which is finally converted to an image file.</p>
+							<div class="actions">
+								<a href="Ray_Tracer.html" class="button">More info</a>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div id="cppCard" class="content">
+							<header>
+								<h3>Parallel Computing Emulator</h3>
+							</header>
+							<p>Description of project 2.</p>
+						</div>
+					</section>
+					<section>
+						<div id="cppCard" class="content">
+							<header>
+								<h3>Bounce Ball</h3>
+							</header>
+							<p>Description of project 3.</p>
+						</div>
+					</section>
+					<section>
+						<div id="pythonCard" class="content">
+							<header>
+								<h3>Random Maze Generator</h3>
+							</header>
+							<p>A python script that generates a randomized maze using Kruskal's Algorithm.</p>
+							<div class="actions">
+								<a href="Maze.html" class="button">More info</a>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div id="pythonCard" class="content">
+							<header>
+								<h3>Viginere Cypher</h3>
+							</header>
+							<p>A program that encrypts sentences or text files using the Viginere Cypher or a derivation of it.</p>
+							<div class="actions">
+								<a href="Cypher.html" class="button">Read More</a>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div id="pythonCard" class="content">
+							<header>
+								<h3>Math and Statistics</h3>
+							</header>
+							<p>A program that computes statistical data from user input.</p>
+							<div class="actions">
+								<a href="Math.html" class="button alt">Read More</a>
+							</div>
+						</div>
+					</section>
 				</div>
 			</div>
 		</section>
 
-		<!-- This is where the footer will be-->
-		<!-- <div id="foot"></div> -->
+		<!-- Update section, includes any new projects or maintenance on webiste. -->
+		<section class="wrapper">
+			<div class="inner">
+				<h2>Updates!</h2>
+				<p>Webiste re-make.</p>
+			</div>
+		</section>
+
+		<!-- Footer section -->
 		<footer id="footer">
-		    <div class="copyright">
-		        &copy; 2019, 2020, Mircea Dumitrache. Design: <strong>Binary</strong> by <a href="https://templated.co">TEMPLATED</a>.
-				<p id="visits">Number of visits: </p>
-		    </div>
+			<div class="inner">
+				<div class="content">
+					<section>
+						<h4>Links</h4>
+						<ul class="plain">
+							<li><a href="#"><i class="icon fa-linkedin">&nbsp;</i>LinkedIn</a></li>
+							<li><a href="#"><i class="icon fa-github">&nbsp;</i>GitHub</a></li>
+						</ul>
+					</section>
+				</div>
+			    <div class="copyright">
+			        &copy; 2021, Mircea Dumitrache. Design: <strong>Industrious</strong> by <a href="https://templated.co">TEMPLATED</a>.
+					<!-- <p id="visits">Number of visits: </p> -->
+			    </div>
+			</div>
 		</footer>
 
-		<!-- Scripts -->
-		<script src="assets/JSScripts/jquery.min.js"></script>
-		<script src="assets/JSScripts/jquery.scrolly.min.js"></script>
-		<script src="assets/JSScripts/skel.min.js"></script>
-		<script src="assets/JSScripts/util.js"></script>
-		<script src="assets/JSScripts/main.js"></script>
-		<script src="assets/JSScripts/increment.js"></script>
+		<!-- Scripts section -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 	</body>
 </html>

@@ -4,23 +4,13 @@
 	<head>
 		<title>Mircea Dumitrache</title>
 		<meta charset="utf-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-
-		<script src="assets/JSScripts/downloadFunct.js"></script>
-		<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-		<style>
-			div.LI-profile-badge {
-				margin-left: auto;
-			    margin-right: auto;
-				width: 18em;
-			}
-		</style>
 	</head>
 	<!--
-		Head - Body space ----------------------------------------- Head - Body space
+		Head - Body space ################################ Head - Body space
 	-->
-	<body>
+	<body class="is-preload">
 		<header id="header">
 		    <a href="index.html" class="logo"><h1>Mircea Dumitrache</h1></a>
 		    <nav>
@@ -35,58 +25,59 @@
 				<li><a href="python.html">Python Projects</a></li>
 				<li><a href="rust.html">Rust Projects</a></li>
 				<li><a href="Vim_Learning.html">Learning Vim</a></li>
-				<li><a href="about.html">About me</a></li>
+				<li><a href="about.html">About me and this Website</a></li>
 			</ul>
 		</nav>
 
-		<section id="main">
+		<!-- Heading -->
+		<div id="heading" >
+			<h1>About</h1>
+		</div>
+
+
+		<section id="main" class="wrapper">
 			<div class="inner">
 				<h2>About me</h2>
 
-                <p>Welcome, <br/>
-                My name is Mircea Dumitrache, currently a graduate student at California State Univerisity, Fullerton.
+                <p> My name is Mircea Dumitrache, currently a graduate student at California State Univerisity, Fullerton.
                     I finished my undergraduate with a degree in Computer Science at the same university I am enrolled in.
-                    I am currently studying for a Masters degree in Computer Science and plan to work on a project about
-                	Dynamic Formation Control in Robotic Swarms.
+                    I am currently studying for a Masters degree in Computer Science.
                 </p>
-                <p>Throughout the semester, I work for the Computer Science department as a Tutor and Lab Assistant, helping
+                <p>While studying as an undergraduate, I worked for the Computer Science department as a Tutor and Lab Assistant, helping
                     students understand the C++ programming language, in addition to basic or advanced programming concepts.
-                    I also work for Mathnasium, a mathematics tutoring center, as an instructor.
-                </p>
 
-				<div class="LI-profile-badge"  data-version="v1" data-size="medium"
-				data-locale="en_US" data-type="horizontal" data-theme="dark"
-				data-vanity="mircea-dumitrache-2708631a2"><a class="LI-simple-link"
-				href='https://www.linkedin.com/in/mircea-dumitrache-2708631a2?trk=profile-badge'>Mircea Dumitrache</a></div>
+					At the beginning of the Fall 2020 semester, I have been appointed to teach an introductory course in C++ programming as
+					a Teaching Associate.
+                </p>
 
                 <h2>About my skills</h2>
                 <p><strong>Please note</strong> that all skills below are based on personal, challenge, or course projects I have pursued, not from actual work experience.</p>
                 <div class="row">
                     <div class="6u 12u$(xsmall)">
-                        <ul class="alt"><p>The programming languages I have experience with are:</p>
-                            <li> Over four years of experience using C++.</li>
-                            <li> Three years of experience using Python.</li>
-                            <li> One year of expereince using Java.</li>
-                            <li> One year of experience using C#.</li>
-                            <li> One year of experience using SQL.</li>
-                            <li> Some experience using Ruby.</li>
-							<li> Some experience using Rust.</li>
-                            <li> Some experience using x86 Architecture based Assembly and MIPS.</li>
-                            <li> Some experience with JavaScript and jQuery.</li>
+                        <ul class="alt"><p>The programming languages I have used are:</p>
+                            <li> C++ (Very confident) </li>
+                            <li> Python (Very confident) </li>
+                            <li> Java (Small projects and a bitcoin project) </li>
+                            <li> C# (A few windows form applications) </li>
+                            <li> SQL (Basics of accessing, updating, and creating databases) </li>
+                            <li> Ruby (Some small projects) </li>
+							<li> Rust (Learning in progress) </li>
+                            <li> x86 Architecture based Assembly and MIPS (Minor confidence) </li>
+                            <li> JavaScript (Basics) </li>
 							<li> </li>
                         </ul>
                         <br/>
                         <ul class="alt"><p>Some of the programming languages I plan to work on:</p>
-							<li> Learn GO</li>
+							<li> Learn GO </li>
 							<li> Practice RUST</li>
-							<li> Read up on and practice Ruby</li>
+							<li> Practice Ruby</li>
 							<li> </li>
                         </ul>
 						<br/>
-						<ul class="alt"><p>Additional experience:</p>
-							<li> Experience in using GitHub for version control.</li>
+						<ul class="alt"><p>Additional knowledge:</p>
+							<li> Confidence in using GitHub for version control.</li>
 							<li> Setting up and programming a RaspberryPi.</li>
-							<li> Some experience with Scrum, Agile, and the Software Development LifeCycle.</li>
+							<li> Some knowledge with Scrum, Agile, and the Software Development LifeCycle.</li>
 							<li> Minor experience in programming modern websites (Java Servlets, ASP.NET and FlaskAPI with Kong)</li>
 							<li> </li>
 						</ul>
@@ -113,6 +104,8 @@
 							<li> Software testing</li>
 							<li> Principles of Computer Graphics</li>
 							<li> Web Back-end engineering</li>
+							<li> Parallel Computing</li>
+							<li> Introduction to Machine Learning</li>
 							<li> </li>
 						</ul>
 					</div>
@@ -127,12 +120,12 @@
 			</div>
 		</footer>
 
-		<!-- Scripts -->
-		<script src="assets/JSScripts/jquery.min.js"></script>
-		<script src="assets/JSScripts/jquery.scrolly.min.js"></script>
-		<script src="assets/JSScripts/skel.min.js"></script>
-		<script src="assets/JSScripts/util.js"></script>
-		<script src="assets/JSScripts/main.js"></script>
+		<!-- Scripts section -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 	</body>
 
 
