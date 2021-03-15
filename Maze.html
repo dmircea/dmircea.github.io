@@ -7,13 +7,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 
-		<script src="assets/JSScripts/downloadFunct.js"></script>
-
 	</head>
 	<!--
-		Head - Body space ----------------------------------------- Head - Body space
+		Head - Body space ################################ Head - Body space
 	-->
-	<body>
+	<body class="is-preload">
 		<header id="header">
 		    <a href="index.html" class="logo"><h1>Mircea Dumitrache</h1></a>
 		    <nav>
@@ -32,7 +30,12 @@
 			</ul>
 		</nav>
 
-		<section id="main">
+		<!-- Heading -->
+		<div id="heading" >
+			<h1>Ray Tracer</h1>
+		</div>
+
+		<section id="main" class="wrapper">
 			<div class="inner">
 				<h2>Random maze generator</h2>
 
@@ -47,22 +50,48 @@
 
 
 				<a download="Maze.zip" href="assets/files/projects/Python/Maze.zip">Download project here!</a>
-				<p>Unfortunately, there is not GitHub repository for this project. (<b>yet</b>) </p>
+				<p>Unfortunately, there is no GitHub repository for this project. (<b>yet</b>) </p>
 
 			</div>
 		</section>
+
+		<!-- Footer section -->
 		<footer id="footer">
-			<div class="copyright">
-				&copy; 2019, Mircea Dumitrache. Design: <strong>Binary</strong> by <a href="https://templated.co">TEMPLATED</a>.
+			<div class="inner">
+				<div class="content">
+					<section>
+						<h4>Notice of Work-in-Progress</h4>
+						<p>Originally, the website used a separate template (the BINARY template).
+							This is a re-make of the original using the new Industrious template.
+							Some of the project pages, are not working as intended, and I am working
+							to fix that. My plan is to fix everything by March 19th, 2021.</p>
+					</section>
+					<section>
+						<h4>Thank you!</h4>
+						<p>If you would like to reach out to me,
+							please you this e-mail: dmircea4you@gmail.com </p>
+					</section>
+					<section>
+						<h4>Links</h4>
+						<ul class="plain">
+							<li><a href="http://linkedin.com/in/mircea-dumitrache-2708631a2"><i class="icon fa-linkedin">&nbsp;</i>LinkedIn</a></li>
+							<li><a href="https://github.com/dmircea"><i class="icon fa-github">&nbsp;</i>GitHub</a></li>
+						</ul>
+					</section>
+				</div>
+			    <div class="copyright">
+			        &copy; 2021, Mircea Dumitrache. Design: <strong>Industrious</strong> by <a href="https://templated.co">TEMPLATED</a>.
+					<!-- <p id="visits">Number of visits: </p> -->
+			    </div>
 			</div>
 		</footer>
 
-		<!-- Scripts -->
-		<script src="assets/JSScripts/jquery.min.js"></script>
-		<script src="assets/JSScripts/jquery.scrolly.min.js"></script>
-		<script src="assets/JSScripts/skel.min.js"></script>
-		<script src="assets/JSScripts/util.js"></script>
-		<script src="assets/JSScripts/main.js"></script>
+		<!-- Scripts section -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 	</body>
 
 
