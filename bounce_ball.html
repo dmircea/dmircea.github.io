@@ -26,50 +26,35 @@
 				<li><a href="python.html">Python Projects</a></li>
 				<li><a href="rust.html">Rust Projects</a></li>
 				<li><a href="Vim_Learning.html">Learning Vim</a></li>
-				<li><a href="about.html">About me</a></li>
+				<li><a href="about.html">About me and this Website</a></li>
 			</ul>
 		</nav>
 
 		<!-- Heading -->
 		<div id="heading" >
-			<h1>Vector Mimic</h1>
+			<h1>Bounce Ball</h1>
 		</div>
 
-		<section id="main">
+		<section id="main" class="wrapper">
 			<div class="inner">
-				<h2>Vector Mimic Program</h2>
+				<h2>Bounce Ball with SFML</h2>
 
-				<div class="row">
-                    <div class="6u 12u$(xsmall)">
-                        <ul class="alt"><p>Important aspects: </p>
-							<li> Object-oriented programming in C++.</li>
-                            <li> Use of the google test library.</li>
-                            <li> Use of templates and dynamic memory allocation.</li>
-                            <li> Contains small python script for easy compilation.</li>
-						</ul>
-					</div>
-				</div>
+				<p>This project was built in C++ using the SFML graphics library.
+				It allows the user to control a set of balls that bounce off the
+				edges of the screen. The user may click on a ball to stop it, then
+				click, hold, and move the cursor to "kick" the ball. When the mouse
+				button is released, the ball is set to move in the opposite direction.</p>
 
-				<p>This program is a simple, different implementation of the Vector
-                data structure from the C++ STL. I used this project as an introduction
-				to the Google Test library.</p>
+				<p>I used this program as a starting point to learning graphical programming
+				and using third party tools.</p>
 
-                <p>This program is not meant to be a replacement to the vector
-                class. It is only mean to be an implementation based on my own
-                thought process on how vectors work behind the scenes.
-                I made this to see if I could replicate a vector's functionality
-                with only C++, and add some other functionalities of my own.</p>
+				<p>This program uses the SFML library which requires the lpthread
+				library. Please make sure those are installed before compiling the
+				source code.</p>
 
-				<p>I am certain that this project is by no means faster or better
-				than the original vector. Nor was it meant to be.</p>
+				<a download="" href="">Download project here!</a>
 
-				<p><b>Please note</b>: the header file contains all the neccessary code to
-				use the Vector_Mimic data structure. However the main.cpp utilizes
-				the gtest library (which also uses the pthread library). Please make
-				sure you have those libraries installed to run the test.</p>
-
-				<a download="Vector_mimic_v2.zip" href="assets/files/projects/C++/Vector_mimic_v2.zip">Download project here.</a>
-				<p>There is no GitHub repository for this project.</p>
+				<p>The GitHub repository can be found <a href="https://github.com/dmircea/BounceBall.git">here</a>!</p>
 
 				<video width="320" height="240" controls>
 					<source src="raytracer.mp4" type="video/mp4">
