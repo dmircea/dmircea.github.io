@@ -2844,3 +2844,11 @@ body.is-menu-visible #menu {
       background-color: #ffd56122;
       background-size: contain;
   }
+
+  #rustCard {
+      background-image: url("../files/images/RustIcon.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #ff870f44;
+      background-size: contain;
+  }

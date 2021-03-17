@@ -4,18 +4,16 @@
 	<head>
 		<title>Mircea Dumitrache</title>
 		<meta charset="utf-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-
-		<script src="assets/JSScripts/downloadFunct.js"></script>
 
 	</head>
 	<!--
-		Head - Body space ----------------------------------------- Head - Body space
+		Head - Body space ################################ Head - Body space
 	-->
-	<body>
+	<body class="is-preload">
 		<header id="header">
-		    <a href="index.html" class="logo"><h1>Mircea Dumitrache</h1></a>
+		    <a href="index.html" class="logo">Mircea Dumitrache</a>
 		    <nav>
 		        <a href="#menu">Menu</a>
 		    </nav>
@@ -32,123 +30,108 @@
 			</ul>
 		</nav>
 
-        <div class="inner">
-            <h1>C++ Projects</h1>
-        </div>
+		<!-- Heading -->
+		<div id="heading" >
+			<h1>C++ Projects</h1>
+		</div>
 
-        <article id="CppOne" class="post style1">
-			<div class="image">
-                <!-- Will replace this image later with one that denotes the project in question. -->
-				<img src="images/pic14.jpg" alt="" data-position="75% center" />
-			</div>
-			<div class="content">
-				<div class="inner">
-					<header>
-						<h2><a href="Vector_mimic.html">Vector Mimic Program</a></h2>
-					</header>
-					<p>An implementation of the vector STL data structure from C++
-                    based on my own logic of how it could work behind the scenes.</p>
-					<ul class="actions">
-						<li><a href="Vector_mimic.html" class="button alt">More info</a></li>
-					</ul>
-				</div>
-				<div class="postnav">
-					<a href="#" class="prev disabled"><span class="icon fa-chevron-up"></span></a>
-					<a href="#CppTwo" class="scrolly next"><span class="icon fa-chevron-down"></span></a>
-				</div>
-			</div>
-		</article>
-
-        <article id="CppTwo" class="post invert style1 alt">
-			<div class="image">
-                <!-- Will replace this image later with one that denotes the project in question. -->
-				<img src="images/pic14.jpg" alt="" data-position="75% center" />
-			</div>
-			<div class="content">
-				<div class="inner">
-					<header>
-						<h2><a href="jokeProgram.html">Joke Program Maker</a></h2>
-					</header>
-					<p>A joke program that creates another cpp file containing
-                    10,000 lines of "if" statements.</p>
-					<ul class="actions">
-						<li><a href="jokeProgram.html" class="button alt">Read More</a></li>
-					</ul>
-				</div>
-				<div class="postnav">
-					<a href="#CppOne" class="scrolly prev"><span class="icon fa-chevron-up"></span></a>
-					<a href="#CppThree" class="scrolly next"><span class="icon fa-chevron-down"></span></a>
-				</div>
-			</div>
-		</article>
-
-		<article id="CppThree" class="post style1">
-			<div class="image">
-                <!-- Will replace this image later with one that denotes the project in question. -->
-				<img src="images/pic14.jpg" alt="" data-position="75% center" />
-			</div>
-			<div class="content">
-				<div class="inner">
-					<header>
-						<h2><a href="Ray_Tracer.html">Basic Ray Tracer</a></h2>
-					</header>
-					<p>A thorough but simple implementation of a ray tracer. This program
-					will use json data to construct a 3-D scene that can be drawn. This scene
-					will include a camera, some objects and lights and will use matrix mathematics
-					to create an image which is finally converted to an image file.</p>
-					<ul class="actions">
-						<li><a href="Ray_Tracer.html" class="button alt">More info</a></li>
-					</ul>
-				</div>
-				<div class="postnav">
-					<a href="#CppTwo" class="scrolly prev"><span class="icon fa-chevron-up"></span></a>
-					<a href="#CppFour" class="scrolly next"><span class="icon fa-chevron-down"></span></a>
+		<section class="wrapper">
+			<div class="inner">
+				<div class="highlights">
+					<section>
+						<div id="cppCard" class="content">
+							<header>
+								<h3>Basic Ray Tracer</h3>
+							</header>
+							<p>A thorough but simple implementation of a ray tracer. This program
+							will use json data to construct a 3-D scene that can be drawn. This scene
+							will include a camera, some objects and lights and will use matrix mathematics
+							to create an image which is finally converted to an image file.</p>
+							<div class="actions">
+								<a href="Ray_Tracer.html" class="button">More info</a>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div id="cppCard" class="content">
+							<header>
+								<h3>Highest sum sub-matrix with MPI</h3>
+							</header>
+							<p>Finding the 2 by 2 sub-matrix of a very large matrix with the largest sum.
+								This project uses MPI to emulate multiple computers.</p>
+							<div class="actions">
+								<a href="parallel_Computing.html" class="button">More info</a>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div id="cppCard" class="content">
+							<header>
+								<h3>Bounce Ball with SFML</h3>
+							</header>
+							<p>Program that shows a 2D ball bouncing on the screen edges.
+								The ball can be manipulated by the user to stop and move again.
+								Uses the SFML library for the graphical displays.</p>
+								<div class="actions">
+									<a href="bounce_ball.html" class="button">More info</a>
+								</div>
+						</div>
+					</section>
+					<section>
+						<div id="cppCard" class="content">
+							<header>
+								<h3>Vector mimicry with gtest</h3>
+							</header>
+							<p>A program I made for my introduction to the Google Test
+							Library. It is my own thought on how the C++ vector data
+							structure was implemented.</p>
+								<div class="actions">
+									<a href="Vector_mimic.html" class="button">More info</a>
+								</div>
+						</div>
+					</section>
 				</div>
 			</div>
-		</article>
-
-        <article id="CppFour" class="post invert style1 alt">
-			<div class="image">
-                <!-- Will replace this image later with one that denotes the project in question. -->
-				<img src="images/pic14.jpg" alt="" data-position="75% center" />
-			</div>
-			<div class="content">
-				<div class="inner">
-					<header>
-						<h2><a href="#CppFour">Text Based Game</a></h2>
-					</header>
-					<p>A simple text based, choices matter game. The game was not
-                    made using a game engine but with pure C++ code. The user will
-                    read text that describes areas, encounters, or situations
-                    and choose what to do.
-                    <br/>
-                    <b>This program is not finished yet. As a game, it takes more time
-                    to create because planning includes the story and flow.</b></p>
-					<ul class="actions">
-						<li><a href="" class="button alt disabled">Read More</a></li>
-					</ul>
-				</div>
-				<div class="postnav">
-					<a href="#CppThree" class="scrolly prev"><span class="icon fa-chevron-up"></span></a>
-					<a href="#" class="scrolly next disabled"><span class="icon fa-chevron-down"></span></a>
-				</div>
-			</div>
-		</article>
+		</section>
 
 
+		<!-- Footer section -->
 		<footer id="footer">
-            <p><b>This page was last updated on 04/24/2020</b></p>
-			<div class="copyright">
-				&copy; 2019, Mircea Dumitrache. Design: <strong>Binary</strong> by <a href="https://templated.co">TEMPLATED</a>.
+			<div class="inner">
+				<div class="content">
+					<section>
+						<h4>Notice of Work-in-Progress</h4>
+						<p>Originally, the website used a separate template (the BINARY template).
+							This is a re-make of the original using the new Industrious template.
+							Some of the project pages, are not working as intended, and I am working
+							to fix that. My plan is to fix everything by March 19th, 2021.</p>
+					</section>
+					<section>
+						<h4>Thank you!</h4>
+						<p>If you would like to reach out to me,
+							please you this e-mail: dmircea4you@gmail.com </p>
+					</section>
+					<section>
+						<h4>Links</h4>
+						<ul class="plain">
+							<li><a href="http://linkedin.com/in/mircea-dumitrache-2708631a2"><i class="icon fa-linkedin">&nbsp;</i>LinkedIn</a></li>
+							<li><a href="https://github.com/dmircea"><i class="icon fa-github">&nbsp;</i>GitHub</a></li>
+						</ul>
+					</section>
+				</div>
+			    <div class="copyright">
+			        &copy; 2021, Mircea Dumitrache. Design: <strong>Industrious</strong> by <a href="https://templated.co">TEMPLATED</a>.
+					<!-- <p id="visits">Number of visits: </p> -->
+			    </div>
 			</div>
 		</footer>
 
-		<!-- Scripts -->
-		<script src="assets/JSScripts/jquery.min.js"></script>
-		<script src="assets/JSScripts/jquery.scrolly.min.js"></script>
-		<script src="assets/JSScripts/skel.min.js"></script>
-		<script src="assets/JSScripts/util.js"></script>
-		<script src="assets/JSScripts/main.js"></script>
+		<!-- Scripts section -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 	</body>
 
 
