@@ -57,10 +57,42 @@
 				<p>The GitHub repository can be found <a href="https://github.com/dmircea/BounceBall.git">here</a>!</p>
 
 				<video width="640" height="480" controls>
-					<source src="raytracer.mp4" type="video/mp4">
+					<source src="assets/files/videos/bounce_ball_example.mp4" type="video/mp4">
 					<source src="raytracer.ogg" type="video/ogg">
 					Video not available yet.
 				</video>
+
+				<!-- Buttons for showing additional information. -->
+				<hr>
+				<p>Please click on the buttons below to see image examples.</p>
+				<ul class="actions fit">
+					<li><a class="button primary fit attach att_one">Image with one ball</a></li>
+					<li><a class="button primary fit attach att_two">Image with multiple balls</a></li>
+					<li><a class="button primary fit attach att_three">Image with blue ball</a></li>
+					<li><a class="button primary fit attach att_four">Image with green ball</a></li>
+				</ul>
+
+				<div hidden class="hideable att_one">
+					<p>The program after having one ball added to the screen. If a ball is red, then it is currently moving.</p>
+					<img width="100%" height="100%" src="assets/files/images/bounce_ball_1.png"></img>
+				</div>
+
+				<div hidden class="hideable att_two">
+					<p>The program after having mutliple balls on the screen at the same time. The balls will "phase" through each other, but bounce at the edge of the screen.</p>
+					<img width="100%" height="100%" src="assets/files/images/bounce_ball_2.png"></img>
+				</div>
+
+				<div hidden class="hideable att_three">
+					<p>The program with a blue ball. Clicking on a red ball will turn it blue and will stop it from moving. The blue ball in the image is inert.</p>
+					<img width="100%" height="100%" src="assets/files/images/bounce_ball_3.png"></img>
+				</div>
+
+				<div hidden class="hideable att_four">
+					<p>The program with a ball in the green state. When clicking and holding on a blue ball, that ball will turn green for as long as the mouse button is down.
+					When the mouse button is released the ball will turn red and start to move. It will move in the oppositer direction of the cursor, and its speed will be
+					relative to how far from the ball the cursor was.</p>
+					<img width="100%" height="100%" src="assets/files/images/bounce_ball_4.png"></img>
+				</div>
 
 			</div>
 		</section>
@@ -102,6 +134,7 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script src="assets/js/extra_functions.js"></script>
 	</body>
 
 
